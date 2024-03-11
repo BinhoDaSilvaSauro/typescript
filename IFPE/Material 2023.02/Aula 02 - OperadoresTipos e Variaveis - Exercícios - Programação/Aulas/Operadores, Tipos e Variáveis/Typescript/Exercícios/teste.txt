@@ -1,0 +1,16 @@
+function resolveEquacaoSegundoGrau(a: number, b: number, c: number): string {
+    let delta = b * b - 4 * a * c;
+    if (delta < 0) {
+        let parteReal = -b / (2*a);
+        let parteImaginaria = Math.sqrt(-delta) / (2*a);
+        return `As raízes são ${parteReal} + ${parteImaginaria}i e ${parteReal} - ${parteImaginaria}i`;
+    } else {
+        let x1 = (-b + Math.sqrt(delta)) / (2*a);
+        let x2 = (-b - Math.sqrt(delta)) / (2*a);
+        return `As raízes são ${x1} e ${x2}`;
+    }
+}
+
+x**2 + 16 = 0
+-4.1.16 = 0
+-64
