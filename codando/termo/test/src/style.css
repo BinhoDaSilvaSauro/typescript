@@ -1,17 +1,48 @@
 :root {
-    --defalt: #121213;
+    --defalt: #440028;
+    --empty: #651142;
+    --wrong: #A1A538;
+    --right: #459331;
+    /* --defalt: #121213;
     --empty: #3a3a3c;
     --wrong: #b59f3b;
-    --right: #538d4e;
+    --right: #538d4e; */
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--defalt);
+}
+
+.header {
+    background-color: black;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.header ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    margin-left: 40px;
+    height: 8vh;
+}
+
+.header li {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 1.5rem;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
 }
 
 #game {
